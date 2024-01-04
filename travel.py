@@ -26,12 +26,13 @@ Brownwood_r = (("Bryan", 191), ("Childress", 231), ("Corpus Christi", 329), ("Da
 
 Bryan_r = (("Childress", 388), ("Corpus Christi", 237), ("Dalhart", 503),  ("Dallas", 165), ("Del Rio", 318), ("Denison", 237), ("Eagle Pass", 306),  ("El Paso", 660), ("Fort Stockton", 422), ("Fort Worth", 167), ("Gainsville", 232), ("Galveston", 145), ("Houston", 95), ("Huntsville", 54), ("Junction", 237), ("Kingsville", 263), ("Laredo", 318), ("Longview", 177), ("Lubbock", 415), ("Lufkin", 121), ("McAllen", 364), ("Odessa", 408), ("Orange", 181), ("Ozona", 325), ("Paris", 234), ("Pecos", 475), ("San Angelo", 277), ("San Antonio", 165), ("South Padre Is", 396), ("Temple", 72), ("Texarkana", 261), ("Tyler", 145), ("Van Horn", 540), ("Victoria", 152), ("Waco", 85), ("Wichita Falls", 270), ("Yoakum", 124))
 
-for a in Bryan_r:
+
+Childress_r = (("Corpus Christi", 542), ("Dalhart", 197),  ("Dallas", 245), ("Del Rio", 382), ("Denison", 232), ("Eagle Pass", 437),  ("El Paso", 482), ("Fort Stockton", 347), ("Fort Worth", 222), ("Gainsville", 193), ("Galveston", 531), ("Houston", 480), ("Huntsville", 412), ("Junction", 299), ("Kingsville", 552), ("Laredo", 528), ("Longview", 366), ("Lubbock", 139), ("Lufkin", 414), ("McAllen", 634), ("Odessa", 263), ("Orange", 533), ("Ozona", 300), ("Paris", 287), ("Pecos", 337), ("San Angelo", 225), ("San Antonio", 398), ("South Padre Is", 684), ("Temple", 329), ("Texarkana", 379), ("Tyler", 342), ("Van Horn", 425), ("Victoria", 489), ("Waco", 307), ("Wichita Falls", 109), ("Yoakum", 455))
+
+for a in Childress_r:
     print(a[0], a[1])
 
 """
-Childress_r = (("Corpus Christi", ), ("Dalhart", ),  ("Dallas", ), ("Del Rio", ), ("Denison", ), ("Eagle Pass", ),  ("El Paso", ), ("Fort Stockton", ), ("Fort Worth", ), ("Gainsville", ), ("Galveston", ), ("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
 Corpus_Christi_r = (("Dalhart", ),  ("Dallas", ), ("Del Rio", ), ("Denison", ), ("Eagle Pass", ),  ("El Paso", ), ("Fort Stockton", ), ("Fort Worth", ), ("Gainsville", ), ("Galveston", ), ("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
 
 Dalhart_r = (("Dallas", ), ("Del Rio", ), ("Denison", ), ("Eagle Pass", ),  ("El Paso", ), ("Fort Stockton", ), ("Fort Worth", ), ("Gainsville", ), ("Galveston", ), ("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
