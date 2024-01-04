@@ -2,8 +2,6 @@
 
 '''
 cities = ("Abilene", "Amarillo", "Austin", "Beaumont", "Big Bend", "Big Spring", "Brownsville", "Brownwood", "Bryan", "Childress", "Corpus Christi", "Dalhart", "Dallas", "Del Rio", "Denison", "Eagle Pass", "El Paso", "Fort Stockton", "Fort Worth", "Gainsville", "Galveston", "Houston", "Huntsville", "Junction", "Kingsville", "Laredo", "Longview", "Lubbock", "Lufkin", "McAllen", "Odessa", "Orange", "Ozona", "Paris", "Pecos", "San Angelo", "San Antonio", "South Padre Is", "Temple", "Texarkana", "Tyler", "Van Horn", "Victoria", "Waco", "Wichita Falls", "Yoakum")
-
-
 ''' 
 
 Abilene_r = {"Amarillo": 266, "Austin": 213, "Beaumont": 412, "Big Bend": 392, "Big Spring": 107, "Brownsville": 516, "Brownwood": 77, "Bryan": 253, "Childress": 154, "Corpus Christi": 387, "Dalhart": 343,  "Dallas": 180, "Del Rio": 246, "Denison": 235, "Eagle Pass": 298,  "El Paso": 439, "Fort Stockton": 250, "Fort Worth": 150, "Gainsville": 195, "Galveston": 398, "Houston": 348, "Huntsville": 304, "Junction": 144, "Kingsville": 397, "Laredo": 373, "Longview": 305, "Lubbock": 162, "Lufkin": 336, "McAllen": 480, "Odessa": 167, "Orange": 434, "Ozona": 170, "Paris": 281, "Pecos": 240, "San Angelo": 89, "San Antonio": 244, "South Padre Is": 530, "Temple": 181, "Texarkana": 359, "Tyler": 277, "Van Horn": 328, "Victoria": 334, "Waco": 183, "Wichita Falls": 141, "Yoakum": 304}
@@ -51,21 +49,22 @@ Denison_r = {"Eagle Pass": 481, "El Paso": 666, "Fort Stockton": 479, "Fort Wort
 
 Eagle_Pass_r = {"El Paso": 478, "Fort Stockton": 240,"Fort Worth": 387, "Gainsville": 446, "Galveston": 380, "Houston": 336, "Huntsville": 357, "Junction": 154, "Kingsville": 205, "Laredo": 124, "Longview": 476, "Lubbock": 387, "Lufkin": 427, "McAllen": 268, "Odessa": 301, "Orange": 443, "Ozona": 169, "Paris": 515, "Pecos": 493, "San Angelo": 212, "San Antonio": 142, "South Padre Is": 338, "Temple": 287, "Texarkana": 559, "Tyler": 443, "Van Horn": 359, "Victoria": 241, "Waco": 322, "Wichita Falls": 429, "Yoakum": 233}
 
+El_Paso_r = {"Fort Stockton": 238, "Fort Worth": 587, "Gainsville": 625, "Galveston": 774, "Houston": 730, "Huntsville": 714, "Junction": 435, "Kingsville": 683, "Laredo": 602, "Longview": 742, "Lubbock": 344, "Lufkin": 761, "McAllen": 745, "Odessa": 274, "Orange": 834, "Ozona": 344, "Paris": 717, "Pecos": 207, "San Angelo": 402, "San Antonio": 548, "South Padre Is": 815, "Temple": 595, "Texarkana": 795, "Tyler": 714, "Van Horn": 119, "Victoria": 661, "Waco": 610, "Wichita Falls": 552, "Yoakum": 630}
+
+Fort_Stockton_r = {"Fort Worth": 385, "Gainsville": 439, "Galveston": 536, "Houston": 492, "Huntsville": 475, "Junction": 197, "Kingsville": 445, "Laredo": 364, "Longview": 535, "Lubbock": 220, "Lufkin": 523, "McAllen": 507, "Odessa": 83, "Orange": 596, "Ozona": 106, "Paris": 516, "Pecos": 53, "San Angelo": 164, "San Antonio": 310, "South Padre Is": 577, "Temple": 357, "Texarkana": 594, "Tyler": 500, "Van Horn": 119, "Victoria": 423, "Waco": 372, "Wichita Falls": 376, "Yoakum": 395}
+
+Fort_Worth_r = {"Gainsville": 65, "Galveston": 309, "Houston": 259, "Huntsville": 191, "Junction": 233, "Kingsville": 393, "Laredo": 416, "Longview": 155, "Lubbock": 292, "Lufkin": 199, "McAllen": 486, "Odessa": 317, "Orange": 318, "Ozona": 303, "Paris": 131, "Pecos": 390, "San Angelo": 222, "San Antonio": 262, "South Padre Is": 526, "Temple": 121, "Texarkana": 209, "Tyler": 127, "Van Horn": 478, "Victoria": 287, "Waco": 86, "Wichita Falls": 112, "Yoakum": 260}
+
+
+Gainsville_r = {"Galveston": 358, "Houston": 307, "Huntsville": 239, "Junction": 292, "Kingsville": 458, "Laredo": 480, "Longview": 178, "Lubbock": 290, "Lufkin": 238, "McAllen": 551, "Odessa": 360, "Orange": 358, "Ozona": 357, "Paris": 96, "Pecos": 434, "San Angelo": 275, "San Antonio": 326, "South Padre Is": 591, "Temple": 186, "Texarkana": 188, "Tyler": 159, "Van Horn": 522, "Victoria": 352, "Waco": 151, "Wichita Falls": 84, "Yoakum": 324}
+
+Galveston_r = {"Houston": 50, "Huntsville": 119, "Junction": 340, "Kingsville": 254, "Laredo": 341, "Longview": 253, "Lubbock": 560, "Lufkin": 166, "McAllen": 367, "Odessa": 538, "Orange": 98, "Ozona": 430, "Paris": 342, "Pecos": 589, "San Angelo": 407, "San Antonio": 241, "South Padre Is": 387, "Temple": 217, "Texarkana": 328, "Tyler": 247, "Van Horn": 654, "Victoria": 154, "Waco": 230, "Wichita Falls": 421, "Yoakum": 157}
+
+Houston_r = {"Huntsville": 69, "Junction": 296, "Kingsville": 232, "Laredo": 311, "Longview": 206, "Lubbock": 510, "Lufkin": 119, "McAllen": 345, "Odessa": 494, "Orange": 108, "Ozona": 386, "Paris": 291, "Pecos": 545, "San Angelo": 363, "San Antonio": 197, "South Padre Is": 366, "Temple": 167, "Texarkana": 283, "Tyler": 197, "Van Horn": 610, "Victoria": 124, "Waco": 180, "Wichita Falls": 371, "Yoakum": 118}
+
+Huntsville_r = {"Junction": 291, "Kingsville": 295, "Laredo": 365, "Longview": 151, "Lubbock": 466, "Lufkin": 72, "McAllen": 398, "Odessa": 458, "Orange": 136, "Ozona": 379, "Paris": 224, "Pecos": 528, "San Angelo": 327, "San Antonio": 217, "South Padre Is": 428, "Temple": 126, "Texarkana": 235, "Tyler": 130, "Van Horn": 594, "Victoria": 186, "Waco": 130, "Wichita Falls": 303, "Yoakum": 158}
+
 """
-El_paso_r = (("Fort Stockton", ), ("Fort Worth", ), ("Gainsville", ), ("Galveston", ), ("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
-Fort_Stockton_r = (("Fort Worth", ), ("Gainsville", ), ("Galveston", ), ("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
-Fort_Worth_r = (("Gainsville", ), ("Galveston", ), ("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
-Gainsville_r = (("Galveston", ), ("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
-Galveston_r = (("Houston", ), ("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
-Houston_r = (("Huntsville", ), ("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
-Huntsville_r = (("Junction", ), ("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
-
 Junction_r = (("Kingsville", ), ("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
 
 Kingsville_r = (("Laredo", ), ("Longview", ), ("Lubbock", ), ("Lufkin", ), ("McAllen", ), ("Odessa", ), ("Orange", ), ("Ozona", ), ("Paris", ), ("Pecos", ), ("San Angelo", ), ("San Antonio", ), ("South Padre Is", ), ("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
@@ -112,9 +111,9 @@ Whichita_Falls_r = (("Yoakum", ))
 
 """
 
-cities = ("Abilene", "Amarillo", "Austin", "Beaumont", "Big Bend", "Big Spring", "Brownsville", "Brownwood", "Bryan", "Childress", "Corpus Christi", "Dalhart", "Dallas", "Del Rio", "Denison", "Eagle Pass")
+cities = ("Abilene", "Amarillo", "Austin", "Beaumont", "Big Bend", "Big Spring", "Brownsville", "Brownwood", "Bryan", "Childress", "Corpus Christi", "Dalhart", "Dallas", "Del Rio", "Denison", "Eagle Pass", "El Paso", "Fort Stockton", "Fort Worth", "Gainsville", "Galveston", "Houston", "Huntsville")
 
-d_city = {"Abilene": Abilene_r, "Amarillo": Amarillo_r, "Austin": Austin_r, "Beaumont": Beaumont_r, "Big Bend": Big_Bend_r, "Big Spring": Big_Spring_r, "Brownsville": Brownsville_r, "Brownwood": Brownwood_r, "Bryan": Bryan_r, "Childress": Childress_r, "Corpus Christi": Corpus_Christi_r, "Dalhart": Dalhart_r, "Dallas": Dallas_r, "Del Rio": Del_Rio_r, "Denison": Denison_r, "Eagle Pass": Eagle_Pass_r}
+d_city = {"Abilene": Abilene_r, "Amarillo": Amarillo_r, "Austin": Austin_r, "Beaumont": Beaumont_r, "Big Bend": Big_Bend_r, "Big Spring": Big_Spring_r, "Brownsville": Brownsville_r, "Brownwood": Brownwood_r, "Bryan": Bryan_r, "Childress": Childress_r, "Corpus Christi": Corpus_Christi_r, "Dalhart": Dalhart_r, "Dallas": Dallas_r, "Del Rio": Del_Rio_r, "Denison": Denison_r, "Eagle Pass": Eagle_Pass_r, "El Paso": El_Paso_r, "Fort Stockton": Fort_Stockton_r, "Fort Worth": Fort_Worth_r, "Gainsville": Gainsville_r, "Galveston": Galveston_r, "Houston": Houston_r, "Huntsville": Huntsville_r}
 
 the_count = 0
 last_one = cities[-1]
