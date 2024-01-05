@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
+import copy
+from random import randint
 
-'''
-cities = ("Abilene", "Amarillo", "Austin", "Beaumont", "Big Bend", "Big Spring", "Brownsville", "Brownwood", "Bryan", "Childress", "Corpus Christi", "Dalhart", "Dallas", "Del Rio", "Denison", "Eagle Pass", "El Paso", "Fort Stockton", "Fort Worth", "Gainsville", "Galveston", "Houston", "Huntsville", "Junction", "Kingsville", "Laredo", "Longview", "Lubbock", "Lufkin", "McAllen", "Odessa", "Orange", "Ozona", "Paris", "Pecos", "San Angelo", "San Antonio", "South Padre Is", "Temple", "Texarkana", "Tyler", "Van Horn", "Victoria", "Waco", "Wichita Falls", "Yoakum")
-''' 
 
 Abilene_r = {"Amarillo": 266, "Austin": 213, "Beaumont": 412, "Big Bend": 392, "Big Spring": 107, "Brownsville": 516, "Brownwood": 77, "Bryan": 253, "Childress": 154, "Corpus Christi": 387, "Dalhart": 343,  "Dallas": 180, "Del Rio": 246, "Denison": 235, "Eagle Pass": 298,  "El Paso": 439, "Fort Stockton": 250, "Fort Worth": 150, "Gainsville": 195, "Galveston": 398, "Houston": 348, "Huntsville": 304, "Junction": 144, "Kingsville": 397, "Laredo": 373, "Longview": 305, "Lubbock": 162, "Lufkin": 336, "McAllen": 480, "Odessa": 167, "Orange": 434, "Ozona": 170, "Paris": 281, "Pecos": 240, "San Angelo": 89, "San Antonio": 244, "South Padre Is": 530, "Temple": 181, "Texarkana": 359, "Tyler": 277, "Van Horn": 328, "Victoria": 334, "Waco": 183, "Wichita Falls": 141, "Yoakum": 304}
 
@@ -79,47 +78,56 @@ San_Angelo_r = {"San Antonio": 209, "South Padre Is": 495, "Temple": 205, "Texar
 
 San_Antonio_r = {"South Padre Is": 286, "Temple": 146, "Texarkana": 418, "Tyler": 302, "Van Horn": 428, "Victoria": 114, "Waco": 181, "Wichita Falls": 336, "Yoakum": 94}
 
-"""
-South_Padre_is = (("Temple", ), ("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
+South_Padre_Is_r = {"Temple": 406, "Texarkana": 648, "Tyler": 540, "Van Horn": 696, "Victoria": 244, "Waco": 441, "Wichita Falls": 621, "Yoakum": 273}
 
-Temple_r = (("Texarkana", ), ("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
+Temple_r = {"Texarkana": 278, "Tyler": 162, "Van Horn": 476, "Victoria": 178, "Waco": 36, "Wichita Falls": 230, "Yoakum": 141}
 
-Texarkana_r = (("Tyler", ), ("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
+Texarkana_r = {"Tyler": 116, "Van Horn": 686, "Victoria": 407, "Waco": 244, "Wichita Falls": 270, "Yoakum": 383}
 
-Tyler_r = (("Van Horn", ), ("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
+Tyler_r = {"Van Horn": 605, "Victoria": 296, "Waco": 128, "Wichita Falls": 232, "Yoakum": 268}
 
-Van_Horn_r = (("Victoria", ), ("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
+Van_Horn_r = {"Victoria": 542, "Waco": 490, "Wichita Falls": 454, "Yoakum": 513}
 
-Victoria_r = (("Waco", ), ("Wichita Falls", ), ("Yoakum", ))
+Victoria_r = {"Waco": 202, "Wichita Falls": 399, "Yoakum": 39}
 
-Waco_r = (("Wichita Falls", ), ("Yoakum", ))
+Waco_r = {"Wichita Falls": 198, "Yoakum": 172}
 
-Whichita_Falls_r = (("Yoakum", ))
+Wichita_Falls_r = {"Yoakum": 370}
 
-"""
 
-cities = ("Abilene", "Amarillo", "Austin", "Beaumont", "Big Bend", "Big Spring", "Brownsville", "Brownwood", "Bryan", "Childress", "Corpus Christi", "Dalhart", "Dallas", "Del Rio", "Denison", "Eagle Pass", "El Paso", "Fort Stockton", "Fort Worth", "Gainsville", "Galveston", "Houston", "Huntsville", "Junction", "Laredo", "Longview", "Lubbock", "Lufkin", "McAllen", "Odessa", "Orange", "Ozona", "Paris", "Pecos", "San Angelo", "San Antonio")
+cities = ["Abilene", "Amarillo", "Austin", "Beaumont", "Big Bend", "Big Spring", "Brownsville", "Brownwood", "Bryan", "Childress", "Corpus Christi", "Dalhart", "Dallas", "Del Rio", "Denison", "Eagle Pass", "El Paso", "Fort Stockton", "Fort Worth", "Gainsville", "Galveston", "Houston", "Huntsville", "Junction", "Laredo", "Longview", "Lubbock", "Lufkin", "McAllen", "Odessa", "Orange", "Ozona", "Paris", "Pecos", "San Angelo", "San Antonio", "South Padre Is", "Temple", "Texarkana", "Tyler", "Van Horn", "Victoria", "Waco", "Wichita Falls"]
 
-d_city = {"Abilene": Abilene_r, "Amarillo": Amarillo_r, "Austin": Austin_r, "Beaumont": Beaumont_r, "Big Bend": Big_Bend_r, "Big Spring": Big_Spring_r, "Brownsville": Brownsville_r, "Brownwood": Brownwood_r, "Bryan": Bryan_r, "Childress": Childress_r, "Corpus Christi": Corpus_Christi_r, "Dalhart": Dalhart_r, "Dallas": Dallas_r, "Del Rio": Del_Rio_r, "Denison": Denison_r, "Eagle Pass": Eagle_Pass_r, "El Paso": El_Paso_r, "Fort Stockton": Fort_Stockton_r, "Fort Worth": Fort_Worth_r, "Gainsville": Gainsville_r, "Galveston": Galveston_r, "Houston": Houston_r, "Huntsville": Huntsville_r, "Junction": Junction_r, "Laredo": Laredo_r, "Longview": Longview_r, "Lubbock": Lubbock_r, "Lufkin": Lufkin_r, "McAllen": McAllen_r, "Odessa": Odessa_r, "Orange": Orange_r, "Ozona": Ozona_r, "Paris": Paris_r, "Pecos": Pecos_r, "San Angelo": San_Angelo_r, "San Antonio": San_Antonio_r}
+d_city = {"Abilene": Abilene_r, "Amarillo": Amarillo_r, "Austin": Austin_r, "Beaumont": Beaumont_r, "Big Bend": Big_Bend_r, "Big Spring": Big_Spring_r, "Brownsville": Brownsville_r, "Brownwood": Brownwood_r, "Bryan": Bryan_r, "Childress": Childress_r, "Corpus Christi": Corpus_Christi_r, "Dalhart": Dalhart_r, "Dallas": Dallas_r, "Del Rio": Del_Rio_r, "Denison": Denison_r, "Eagle Pass": Eagle_Pass_r, "El Paso": El_Paso_r, "Fort Stockton": Fort_Stockton_r, "Fort Worth": Fort_Worth_r, "Gainsville": Gainsville_r, "Galveston": Galveston_r, "Houston": Houston_r, "Huntsville": Huntsville_r, "Junction": Junction_r, "Laredo": Laredo_r, "Longview": Longview_r, "Lubbock": Lubbock_r, "Lufkin": Lufkin_r, "McAllen": McAllen_r, "Odessa": Odessa_r, "Orange": Orange_r, "Ozona": Ozona_r, "Paris": Paris_r, "Pecos": Pecos_r, "San Angelo": San_Angelo_r, "San Antonio": San_Antonio_r, "South Padre Is": South_Padre_Is_r, "Temple": Temple_r, "Texarkana": Texarkana_r, "Tyler": Tyler_r, "Van Horn": Van_Horn_r, "Victoria": Victoria_r, "Waco": Waco_r, "Wichita Falls": Wichita_Falls_r}
 
-the_count = 0
-last_one = cities[-1]
-the_pos = 0
-for a in cities:
-    if a == last_one:
-        the_tup = (a, cities[0])
-    else:
-        the_tup = (a, cities[the_pos + 1])
 
-    the_pos += 1
+for a in range(1000):
+    city_copy = cities.copy()
+    shuffled_city = []
+    while len(city_copy) > 0:
+        last = len(city_copy) - 1
+        my_rand = randint(0, last)
+        my_pop = city_copy.pop(my_rand)
+        shuffled_city.append(my_pop)
 
-    city0, city1 = the_tup
-    if city0 > city1:
-        the_count += d_city[city1][city0]
-    else:
-        the_count += d_city[city0][city1]
+
+    the_count = 0
+    #last_one = cities[-1]
+    last_one = shuffled_city[-1]
+    the_pos = 0
+    #for a in cities:
+    for a in shuffled_city:
+        if a == last_one:
+            #city0, city1 = (a, cities[0])
+            city0, city1 = (a, shuffled_city[0])
+        else:
+            #city0, city1 = (a, cities[the_pos + 1])
+            city0, city1 = (a, shuffled_city[the_pos + 1])
+        the_pos += 1
+
+        if city0 > city1:
+            the_count += d_city[city1][city0]
+        else:
+            the_count += d_city[city0][city1]
 
     print(the_count)
-
-print(the_count)
 
