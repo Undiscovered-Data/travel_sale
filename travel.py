@@ -100,7 +100,8 @@ cities = ["Abilene", "Amarillo", "Austin", "Beaumont", "Big Bend", "Big Spring",
 d_city = {"Abilene": Abilene_r, "Amarillo": Amarillo_r, "Austin": Austin_r, "Beaumont": Beaumont_r, "Big Bend": Big_Bend_r, "Big Spring": Big_Spring_r, "Brownsville": Brownsville_r, "Brownwood": Brownwood_r, "Bryan": Bryan_r, "Childress": Childress_r, "Corpus Christi": Corpus_Christi_r, "Dalhart": Dalhart_r, "Dallas": Dallas_r, "Del Rio": Del_Rio_r, "Denison": Denison_r, "Eagle Pass": Eagle_Pass_r, "El Paso": El_Paso_r, "Fort Stockton": Fort_Stockton_r, "Fort Worth": Fort_Worth_r, "Gainsville": Gainsville_r, "Galveston": Galveston_r, "Houston": Houston_r, "Huntsville": Huntsville_r, "Junction": Junction_r, "Laredo": Laredo_r, "Longview": Longview_r, "Lubbock": Lubbock_r, "Lufkin": Lufkin_r, "McAllen": McAllen_r, "Odessa": Odessa_r, "Orange": Orange_r, "Ozona": Ozona_r, "Paris": Paris_r, "Pecos": Pecos_r, "San Angelo": San_Angelo_r, "San Antonio": San_Antonio_r, "South Padre Is": South_Padre_Is_r, "Temple": Temple_r, "Texarkana": Texarkana_r, "Tyler": Tyler_r, "Van Horn": Van_Horn_r, "Victoria": Victoria_r, "Waco": Waco_r, "Wichita Falls": Wichita_Falls_r}
 
 
-for a in range(1000):
+total_count = 1_000_000 
+for a in range(10000):
     city_copy = cities.copy()
     shuffled_city = []
     while len(city_copy) > 0:
@@ -109,6 +110,7 @@ for a in range(1000):
         my_pop = city_copy.pop(my_rand)
         shuffled_city.append(my_pop)
 
+    pollo_city = shuffled_city.copy()
 
     the_count = 0
     #last_one = cities[-1]
@@ -129,5 +131,12 @@ for a in range(1000):
         else:
             the_count += d_city[city0][city1]
 
-    print(the_count)
+    if the_count < total_count:
+        total_count = the_count
+        final_list = pollo_city
+
+    #print(the_count)
+    print(total_count)
+print(final_list)
+
 
